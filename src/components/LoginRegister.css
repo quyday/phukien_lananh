@@ -1,0 +1,216 @@
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 40px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.form-container {
+    background: white;
+    padding: 40px 32px 32px 32px;
+    border-radius: 16px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.13);
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    margin: 32px 8px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 24px 6px 16px 6px;
+    margin: 12px 2px;
+    max-width: 98vw;
+  }
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #666;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.close-button:hover {
+    background-color: #f5f5f5;
+    color: #e6749c;
+}
+
+.form-header {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    color: #e6749c;
+    border-bottom: 2px solid #e6749c;
+    margin-bottom: -2px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #e6749c;
+    box-shadow: 0 0 5px rgba(230, 116, 156, 0.2);
+    outline: none;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.forgot-password {
+    color: #e6749c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e6749c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #d45a82;
+}
+
+.terms {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.terms a {
+    color: #e6749c;
+    text-decoration: none;
+}
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-button.facebook {
+    color: #1877f2;
+}
+
+.social-button.google {
+    color: #db4437;
+}
+
+.social-button:hover {
+    background-color: #f5f5f5;
+} 

@@ -1,0 +1,206 @@
+.home-content {
+  padding: 0 50px;
+}
+
+.home-row {
+  margin-bottom: 40px;
+}
+
+/* Row 1 styles */
+.home-row:first-child {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  border-radius: 30px;
+  width: 66.67%;
+  height: auto;
+  object-fit: cover;
+}
+
+.home-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.buy-now-btn {
+  background-color: #e6749c;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover {
+  background-color: #d45a82;
+}
+
+/* Row 2 styles */
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: calc(33.333% - 14px);
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.gallery-item p {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* Row 3 styles */
+.subscribe-container {
+  display: flex;
+  background-color: #e6749c;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.subscribe-container::after {
+  content: '';
+  position: absolute;
+  left: 70%;
+  height: 100%;
+  width: 1.5px;
+  background-color: black;
+}
+
+.subscribe-container input {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  font-size: 1rem;
+  background-color: #e6749c;
+  color: white;
+  padding-right: 40px;
+}
+
+.subscribe-container input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe-container input:focus {
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #e6749c;
+  color: black;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding-left: 40px;
+}
+
+.subscribe-btn:hover {
+  background-color: #d45a82;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .home-content {
+    padding: 0 30px;
+  }
+
+  .home-row:first-child {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
+
+  .image-gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .subscribe-container::after {
+    display: none;
+  }
+
+  .subscribe-container input,
+  .subscribe-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-content {
+    padding: 0 15px;
+  }
+
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .buy-now-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .gallery-item p {
+    font-size: 1.5rem;
+  }
+} 
